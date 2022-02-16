@@ -1,17 +1,16 @@
-
 #include <fstream>
 #include <iostream>
 #include <string>
 using namespace std;
 
 
-string skrotZopisem(string wiadomosc) {
+string skrotZopisem(string wiadomosc) 
+{
     int S[8] = { int('A'), int('L'), int('G'), int('O'), int('R'), int('Y'), int('T'), int('M') };
-
     int length = wiadomosc.length();
     int rest = length % 8;
     
-    for (int i = 0; i < 8-rest; i++) {
+                       for (int i = 0; i < 8-rest; i++) {
         wiadomosc += ".";
     }
     length = wiadomosc.length();
